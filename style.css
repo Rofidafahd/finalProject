@@ -1,0 +1,247 @@
+:root{
+    --bs-primary: #731F1F;
+    --bs-secondary: #f5e6d3;
+    --text: #fff8f0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bs-secondary);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/* section 2 */
+#section2 {
+    padding: 10px 0;
+    background-color: var(--bs-primary);
+}
+.container-fluid {
+    max-width: 90%;    
+}
+.container-fluid h2{
+    color: var(--bs-secondary);
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+.card {
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+    background-color: var(--bs-secondary);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.5);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+}
+
+.card-text {
+    color: var(--bs-primary);
+    font-style: italic;
+    font-size: 1rem;
+}
+/* section 3 */
+.containerAbout {
+    display: flex;
+    background-color: var(--bs-primary);
+    flex-direction: row;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+.img-container {
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.text-container {
+    background-color: var(--bs-primary);
+    color: var(--bs-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.text-container p {
+    font-size: 1em;
+    line-height: 2;
+}
+
+/* Contact Us Section */
+.contact {
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 7%;
+}
+
+.contact .container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact label{
+    color: var(--bs-secondary);
+    text-align: left;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+.contact textarea {
+  resize: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: var(--bs-secondary);
+  color: var(--bs-primary);
+}
+.contact input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+}
+
+.send-btn {
+  background-color: var(--bs-secondary);
+  color: var(--bs-primary);
+  padding: 12px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1em;
+}
+.send-btn:hover {
+  box-shadow: 1px 1px 8px rgba(225, 225, 255, 1);
+  transform: translateY(-2px) scale(0.95);
+}
+/* footer */
+footer {
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+  padding: 20px 0;
+
+}
+footer p {
+  margin: 5px 0;
+}
+footer a {
+  color: var(--bs-secondary);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .containerAbout {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        transform: scale(0.92);
+        margin: 0%;
+    }
+    .img-container {
+        width: 100%; 
+        height: auto; 
+        margin: 0;
+        transform: scale(0.92);
+    }
+    .text-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+    .text-container p {
+        font-size: 0.9rem;
+    }
+    .text-container h4 {
+        font-size: 1.2rem;
+    }
+    .text-container p.mb-2 {
+        font-size: 0.8rem;
+    }
+    footer {
+        padding: 10px 0;
+    }
+    footer p {
+        font-size: 0.9em;
+    }
+    footer a {
+        font-size: 0.9em;
+    }    
+    .contact {
+        padding: 40px 20px;
+    }
+    .contact h2 {
+        font-size: 2em;
+    }
+    .contact p {
+        font-size: 1em;
+    }
+    .contact form {
+        width: 100%;
+        max-width: 90%;
+    }
+    .contact textarea, .contact input {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+    .img-container {
+        transition: transform 0.3s ease;
+        transform: scale(1.2);
+        width: 100%;
+        margin: 0 30px;
+    }
+
+    .text-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
