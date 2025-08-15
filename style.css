@@ -27,6 +27,7 @@ body {
     margin: 20px auto;
     text-align: center;
     font-size: 2rem;
+    font-weight: bold;
 }
 .card {
     transition: transform 0.3s ease , box-shadow 0.3s ease;
@@ -104,12 +105,12 @@ body {
 
 .contact h2 {
   font-size: 2.5em;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .contact p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
@@ -155,8 +156,8 @@ body {
   font-size: 1em;
 }
 .send-btn:hover {
-  box-shadow: 1px 1px 8px rgba(225, 225, 255, 1);
-  transform: translateY(-2px) scale(0.95);
+  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.5);
+  transform: scale(0.95);
 }
 /* footer */
 footer {
