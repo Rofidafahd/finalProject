@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5e6d3;
+    background-color: var(--bs-secondary);
     padding: 10px 20px;
 }
 
@@ -32,7 +32,7 @@ body {
 nav a {
     text-decoration: none;
     background-color: var(--bs-primary);
-    color: white;
+    color: var(--bs-secondary);
     padding: 8px 15px;
     border-radius: 8px;
     margin-left: 10px;
@@ -58,7 +58,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--bs-secondary);
     text-align: center;
     padding: 20px;
 }
@@ -98,7 +98,7 @@ nav a:hover {
 .search-box button {
     padding: 10px 20px;
     background-color: var(--bs-primary);
-    color: white;
+    color: var(--bs-secondary);
     border: none;
     border-radius: 0 5px 5px 0;
     font-size: 18px;
