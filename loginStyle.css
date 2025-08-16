@@ -1,0 +1,145 @@
+:root {
+    --bg-primary: #f5e6d3;
+    --bg-secondary: #fff8f0;
+    --btn-primary: #731F1F;
+    --light-red: #a15656;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url('./img/home.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 221, 203, 0.6);
+    z-index: -1;
+}
+
+.container {
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.container h2 {
+    text-align: center;
+    color: var(--btn-primary);
+    margin-bottom: 60px;
+    
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--btn-primary);
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: var(--bg-secondary);
+    color: var(--btn-primary);
+}
+
+input:focus {
+    outline: none;
+    border:none;
+    box-shadow: 0 0 5px var(--btn-primary);
+}
+
+input::placeholder {
+    color: var(--light-red);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: var(--btn-primary);
+    color: var(--bg-secondary);
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--light-red);
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--btn-primary);
+}
+
+p a {
+    color: var(--btn-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    color: var(--btn-primary);
+    margin-bottom: 20px;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--btn-primary);
+    width: 0; 
+    animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
